@@ -1,0 +1,14 @@
+$primary-color: #ed9dbd;
+
+.content {
+    text-align: center;
+}
+#adjective {
+    color: $primary-color;
+}
+#weather-today {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 12px;
+    background: $primary-color;
+}
