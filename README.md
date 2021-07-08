@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 BostonWeather connects to https://openweathermap.org/api
 
-Add your API key in `environment.ts`:
+To develop, add your API key in a file called `environment.ts`:
 
     export const environment = {
         production: false,
