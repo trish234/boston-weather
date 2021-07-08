@@ -1,5 +1,7 @@
 <div class="content" role="main">
-  <h2>The weather in Boston is <span id="adjective">lovely</span>.</h2>
+  <h2>The weather in Boston is
+    <span [innerHTML]="adjective" id="adjective"></span>.
+  </h2>
   <div id="weather-today">
     <div><img [src]="icon" /></div>
     It is currently

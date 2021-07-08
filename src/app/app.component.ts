@@ -10,15 +10,24 @@ export class AppComponent implements OnInit{
   title = 'boston-weather';
 
   constructor(private configService: ConfigService) {}
+  //TODO declare types w/o error
   weather : any;
   icon : any;
   temp : any;
+  adjective : any;
 
   ngOnInit(){
     this.configService.getWeather().subscribe((data: (any)) =>{
       console.log(data);
       this.temp = data.main.temp;
       this.icon = "http://openweathermap.org/img/wn/"+ data.weather[0].icon +"@2x.png";
+      
+      // TODO function that provides meaningful adjectives
+      if (this.temp >= 85){
+        this.adjective = "a bit hot";
+      } else {
+        this.adjective = "lovely";
+      }
     });
   }
 }
