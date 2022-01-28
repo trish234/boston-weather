@@ -1,3 +1,4 @@
+<div id="header" role="banner"> </div>
 <div class="content" role="main">
   <h2>The weather in Boston is
     <span [innerHTML]="adjective" id="adjective"></span>.
@@ -5,7 +6,7 @@
   <div id="weather-today">
     <div><img [src]="icon" /></div>
     It is currently
-    <span [innerHTML]="temp"></span>
+    <b><span [innerHTML]="temp"></span></b>
     degrees Fahrenheit. 
   </div>
   

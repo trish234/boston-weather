@@ -1,7 +1,12 @@
 $primary-color: #ed9dbd;
 
 .content {
+    margin-top: 6%;
+    font-family: "Courier New", monospace;
     text-align: center;
+}
+#header {
+    font-family: sans-serif;
 }
 #adjective {
     color: $primary-color;
